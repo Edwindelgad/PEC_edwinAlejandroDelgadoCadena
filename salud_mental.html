@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emociones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stilos.css">
+</head>
+<body style="background-color: beige;">
+    <header>
+        <h1>Salud Mental</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="autoestima.html">Autoestima</a></li>
+                <li><a href="depresion.html">Depresion</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <!-- SECCIÓN DE SALUD (SOLO LAS CAJAS) -->
+    <section class="salud">
+        <div class="salud-caja">
+            <h2>¿Qué es la salud mental?</h2>
+            <div class="salud-info">
+                <p>La salud mental es el estado de bienestar que permite a una persona manejar sus emociones, afrontar las dificultades y relacionarse con otras personas de manera adecuada.</p>
+            </div>
+        </div>
+
+        <div class="salud-caja">
+            <h2>Importancia de la salud mental</h2>
+            <div class="salud-info">
+                <p>Cuidar la salud mental es importante porque influye en nuestra forma de pensar, sentir y actuar. También puede ayudarnos a enfrentar situaciones difíciles y mantener relaciones saludables.</p>
+            </div>
+        </div>
+
+        <div class="salud-caja">
+            <h2>Emociones</h2>
+            <div class="salud-info">
+                <p>Las emociones forman parte de nuestra vida diaria. Aprender a reconocerlas y expresarlas de una manera adecuada puede ayudarnos a comprender mejor lo que sentimos.</p>
+            </div>
+        </div>
+
+        <div class="salud-caja">
+            <h2>Manejo del estrés</h2>
+            <div class="salud-info">
+                <p>El estrés puede aparecer ante situaciones escolares, familiares o personales. Descansar, organizar las actividades y hablar con alguien de confianza pueden ayudar a manejarlo.</p>
+            </div>
+        </div>
+
+        <div class="salud-caja">
+            <h2>Autoestima</h2>
+            <div class="salud-info">
+                <p>La autoestima está relacionada con la manera en que una persona se percibe y valora. Una autoestima saludable permite reconocer nuestras capacidades y aceptar que también podemos cometer errores.</p>
+            </div>
+        </div>
+
+        <div class="salud-caja">
+            <h2>¿Cómo cuidar la salud mental?</h2>
+            <div class="salud-info">
+                <p>Dormir adecuadamente, mantener contacto con personas de confianza, realizar actividades agradables, organizar el tiempo y pedir ayuda cuando sea necesario son algunas formas de cuidar la salud mental.</p>
+            </div>
+        </div>
+    </section> 
+    <!-- AQUÍ TERMINA .salud -->
+
+    <!-- EL BOTÓN Y EL TEST ESTÁN FUERA DE .salud PARA QUE NO SE OCULTEN MAL -->
+    <button id="comenzarTest">Comenzar test</button>
+
+    <section class="test" id="test">
+        <form id="formTest">
+            <h1>Test de bienestar emocional</h1>
+            <p>Responde las siguientes preguntas de acuerdo con cómo te has sentido durante las últimas semanas.</p>
+
+            <!-- Pregunta 1 -->
+            <div class="pregunta">
+                <h3>1. ¿Te has sentido con energía para realizar tus actividades diarias?</h3>
+                <label><input type="radio" name="p1" value="3"> Siempre</label>
+                <label><input type="radio" name="p1" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p1" value="1"> Rara vez</label>
+                <label><input type="radio" name="p1" value="0"> Nunca</label>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="pregunta">
+                <h3>2. ¿Has disfrutado las actividades que normalmente te gustan?</h3>
+                <label><input type="radio" name="p2" value="3"> Siempre</label>
+                <label><input type="radio" name="p2" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p2" value="1"> Rara vez</label>
+                <label><input type="radio" name="p2" value="0"> Nunca</label>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="pregunta">
+                <h3>3. ¿Has podido concentrarte en tus actividades escolares o personales?</h3>
+                <label><input type="radio" name="p3" value="3"> Siempre</label>
+                <label><input type="radio" name="p3" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p3" value="1"> Rara vez</label>
+                <label><input type="radio" name="p3" value="0"> Nunca</label>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="pregunta">
+                <h3>4. ¿Has podido descansar y dormir adecuadamente?</h3>
+                <label><input type="radio" name="p4" value="3"> Siempre</label>
+                <label><input type="radio" name="p4" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p4" value="1"> Rara vez</label>
+                <label><input type="radio" name="p4" value="0"> Nunca</label>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="pregunta">
+                <h3>5. ¿Has sentido que puedes manejar tus preocupaciones?</h3>
+                <label><input type="radio" name="p5" value="3"> Siempre</label>
+                <label><input type="radio" name="p5" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p5" value="1"> Rara vez</label>
+                <label><input type="radio" name="p5" value="0"> Nunca</label>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="pregunta">
+                <h3>6. ¿Te has sentido acompañado por personas en las que confías?</h3>
+                <label><input type="radio" name="p6" value="3"> Siempre</label>
+                <label><input type="radio" name="p6" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p6" value="1"> Rara vez</label>
+                <label><input type="radio" name="p6" value="0"> Nunca</label>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="pregunta">
+                <h3>7. ¿Has podido realizar normalmente tus actividades escolares?</h3>
+                <label><input type="radio" name="p7" value="3"> Siempre</label>
+                <label><input type="radio" name="p7" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p7" value="1"> Rara vez</label>
+                <label><input type="radio" name="p7" value="0"> Nunca</label>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="pregunta">
+                <h3>8. ¿Has podido expresar lo que sientes con alguien de confianza?</h3>
+                <label><input type="radio" name="p8" value="3"> Siempre</label>
+                <label><input type="radio" name="p8" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p8" value="1"> Rara vez</label>
+                <label><input type="radio" name="p8" value="0"> Nunca</label>
+            </div>
+
+            <!-- Pregunta 9 -->
+            <div class="pregunta">
+                <h3>9. ¿Has tenido momentos en los que te has sentido tranquilo?</h3>
+                <label><input type="radio" name="p9" value="3"> Siempre</label>
+                <label><input type="radio" name="p9" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p9" value="1"> Rara vez</label>
+                <label><input type="radio" name="p9" value="0"> Nunca</label>
+            </div>
+
+            <!-- Pregunta 10 -->
+            <div class="pregunta">
+                <h3>10. ¿Sientes que puedes pedir ayuda cuando la necesitas?</h3>
+                <label><input type="radio" name="p10" value="3"> Siempre</label>
+                <label><input type="radio" name="p10" value="2"> Algunas veces</label>
+                <label><input type="radio" name="p10" value="1"> Rara vez</label>
+                <label><input type="radio" name="p10" value="0"> Nunca</label>
+            </div>
+
+            <button type="submit">Ver resultado</button>
+        </form>
+        <div id="resultadoTest"></div>
+    </section>
+    
+    <aside class="copyright">
+        <p>© 2026 Emociones. Todos los derechos reservados.Creado por Edwin Alejandro</p>
+    </aside>
+    <div id="cursor"></div>
+    <audio id="musicaFondo" loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+    <script src="funciones.js"></script>    
+</body>
+</html>

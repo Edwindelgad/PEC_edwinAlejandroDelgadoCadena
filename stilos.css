@@ -1,0 +1,291 @@
+/*fuente de letra*/
+*{
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Sirven para que el titulo y las listas en el header esten centrados y horizontales*/
+header {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+}
+
+nav li {
+    display: inline;
+}
+/*se encarga de la forma y animacion de los contenedores y cajas*/
+.contenedor {
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.caja {
+    background-color: #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+    height: 30px;
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.caja h2 {
+    margin: 0;
+}
+
+.caja p {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* Cuando pasas el cursor */
+.caja:hover {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.caja:hover p {
+    opacity: 1;
+}
+/*Videos de section */
+.videos {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    width: 30%;
+}
+
+.videos iframe {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+}
+/*modificaciones al aside*/
+.copyright {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+/*cursor modificaciones*/
+html, body {
+    cursor: none !important;
+}
+
+#cursor {
+    position: fixed;
+    pointer-events: none;
+    font-size: 25px;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+/*carrusel*/
+.carrusel {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.texto-carrusel {
+    width: 600px;
+    height: 250px;
+    background-color: #ddd;
+    padding: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.activo {
+    display: block;
+}
+
+.texto-carrusel h2 {
+    text-align: center;
+}
+
+.texto-carrusel p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.carrusel button {
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.carrusel button:hover {
+    transform: scale(1.1);
+}
+/*efectos para la pagina de depresion*/
+.acordeon {
+    width: 70%;
+    margin: 40px auto;
+}
+
+.tema {
+    margin-bottom: 15px;
+}
+
+.tema h2 {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.informacion {
+    display: none;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 0 0 10px 10px;
+}
+
+.tema.activo .informacion {
+    display: block;
+}
+/*efectos para la pagina de salud mental*/
+.salud {
+    width: 60%;
+    margin: 40px auto;
+}
+
+.salud-caja {
+    background-color: #ddd;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.salud-caja h2 {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.salud-info {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+
+.salud-info p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Cuando se abre */
+.salud-caja.activo .salud-info {
+    max-height: 300px;
+    padding: 20px;
+}
+body {
+    padding-bottom: 70px;
+}
+/* Ruleta de Tips de Bienestar */
+.ruleta-tips {
+    width: 60%;
+    margin: 40px auto;
+    background-color: beige;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#btnTip {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: antiquewhite;
+    border: 2px solid beige;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+#btnTip:hover {
+    background-color: #f0dcc2;
+    transform: scale(1.05);
+}
+
+.caja-tip {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: beige;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    min-height: 50px;
+}
+/*diseño responsivo*/
+@media (max-width: 768px) {
+    .contenedor, 
+    .carrusel, 
+    .acordeon, 
+    .salud, 
+    .ruleta-tips {
+        width: 90% !important;
+        margin: 20px auto !important;
+    }
+
+    .videos {
+        position: static !important;
+        width: 90% !important;
+        margin: 30px auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videos iframe {
+        width: 100% !important;
+        height: 220px;
+    }
+
+    .texto-carrusel {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 220px;
+    }
+
+    body {
+        padding-bottom: 90px;
+    }
+}
